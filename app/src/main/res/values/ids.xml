@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewLoginTitle" type="id"/>
+    <item name="btnLogin" type="id"/>
+    <item name="etDuration" type="id"/>
+    <item name="btnFetchArticles" type="id"/>
+    <item name="btnViewArticles" type="id"/>
+    <item name="tvSignup" type="id"/>
+</resources>

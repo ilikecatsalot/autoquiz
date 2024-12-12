@@ -1,0 +1,70 @@
+<!-- res/layout/activity_signup.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Heading Text -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_activity_label"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:padding="12dp"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Already have an account? Log in. -->
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Log in"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

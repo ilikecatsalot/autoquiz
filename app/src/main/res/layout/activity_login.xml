@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/windowBackground">
+
+    <TextView
+        android:id="@+id/textViewLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_background"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:padding="12dp"
+        android:text="Log In"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center" />
+
+</LinearLayout>

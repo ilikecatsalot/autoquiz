@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input for scraper duration -->
+    <EditText
+        android:id="@+id/etDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter duration in minutes"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to fetch articles -->
+    <Button
+        android:id="@+id/btnFetchArticles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Articles" />
+
+    <!-- Button to view articles -->
+    <Button
+        android:id="@+id/btnViewArticles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Articles"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
