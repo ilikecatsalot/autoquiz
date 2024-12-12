@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView to display the article title -->
+    <TextView
+        android:id="@+id/tvArticleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generating quiz..."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Button to trigger the quiz generation -->
+    <Button
+        android:id="@+id/btnGenerateQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Quiz"
+        android:textSize="16sp" />
+
+    <!-- RecyclerView to display the quiz questions -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

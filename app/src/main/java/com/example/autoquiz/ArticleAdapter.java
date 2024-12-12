@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -31,15 +32,24 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
     @Override
     public void onBindViewHolder(@NonNull ArticleViewHolder holder, int position) {
         Article article = articles.get(position);
-        holder.tvTitle.setText(article.getTitle());  // Set the title
-        holder.tvDate.setText(article.getDate());    // Set the date
+        holder.tvTitle.setText(article.getTitle());
+        holder.tvDate.setText(article.getDate());
 
-        holder.itemView.setOnClickListener(v -> {
-            // Open the article link in a browser when clicked
+        // Open article link in a browser
+        holder.btnViewArticle.setOnClickListener(v -> {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(article.getLink()));
             context.startActivity(browserIntent);
         });
+
+        // Navigate to the quiz generation activity
+        holder.btnGenerateQuiz.setOnClickListener(v -> {
+            Intent quizIntent = new Intent(context, QuizActivity.class);
+            quizIntent.putExtra("articleTitle", article.getTitle());
+            quizIntent.putExtra("articleText", article.getContent()); // Add the article content here
+            context.startActivity(quizIntent);
+        });
     }
+
 
 
     @Override
@@ -49,11 +59,15 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
     public static class ArticleViewHolder extends RecyclerView.ViewHolder {
         TextView tvTitle, tvDate;
+        Button btnViewArticle, btnGenerateQuiz;
 
         public ArticleViewHolder(@NonNull View itemView) {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitle); // Title TextView
             tvDate = itemView.findViewById(R.id.tvDate);   // Date TextView
+            btnViewArticle = itemView.findViewById(R.id.btnViewArticle); // View Article button
+            btnGenerateQuiz = itemView.findViewById(R.id.btnGenerateQuiz); // Generate Quiz button
         }
     }
+
 }

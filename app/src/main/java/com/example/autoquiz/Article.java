@@ -5,10 +5,13 @@ public class Article {
     String title;  // Use title directly
     String date;
 
+    String content;
+
     public Article(String link, String title, String date) {
         this.link = link;
         this.title = title;  // Initialize title
         this.date = date;
+        this.content = content;
     }
 
     // Getters
@@ -22,5 +25,9 @@ public class Article {
 
     public String getDate() {
         return date;
+    }
+
+    public String getContent() {
+        return content;
     }
 }

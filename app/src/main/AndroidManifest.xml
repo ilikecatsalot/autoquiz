@@ -42,6 +42,8 @@
             android:label="Home" />
         <activity android:name=".ArticlesActivity"
             android:label="@string/article_activity_label" />
+        <activity android:name=".QuizActivity" />
+
 
 
     </application>

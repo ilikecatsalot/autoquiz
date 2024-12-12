@@ -25,6 +25,29 @@
         android:layout_height="wrap_content"
         android:text="Date"
         android:textSize="14sp"
-        android:textColor="#666666" />
+        android:textColor="#666666"
+        android:paddingBottom="8dp" />
+
+    <!-- Buttons for actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btnViewArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Article" />
+
+        <Button
+            android:id="@+id/btnGenerateQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Quiz"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
 </LinearLayout>
 
